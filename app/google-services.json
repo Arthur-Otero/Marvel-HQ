@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "301698922634",
+    "project_id": "marvel-hq-30a85",
+    "storage_bucket": "marvel-hq-30a85.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301698922634:android:70dd3a5915964a325b5573",
+        "android_client_info": {
+          "package_name": "com.example.marvelapidesafio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301698922634-0jedkphfb9ih877b4hmr4q2vp5ubfb7d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.marvelapidesafio",
+            "certificate_hash": "5534ea188d803eb1ecb3b9e98b650fca7391125c"
+          }
+        },
+        {
+          "client_id": "301698922634-v7q2jaeei43rfiedsokb8spp8ravk0ra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhSBkJhcZ8XLgPE4uSZfP3XixRvYF1Nu8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "301698922634-v7q2jaeei43rfiedsokb8spp8ravk0ra.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
