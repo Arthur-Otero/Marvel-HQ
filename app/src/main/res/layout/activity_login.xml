@@ -55,8 +55,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Email"
-                        app:boxStrokeColor="#EA2427"
                         android:textColorHint="#EA2427"
+                        app:boxStrokeColor="#EA2427"
                         app:errorEnabled="true">
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -65,8 +65,8 @@
                             android:layout_height="match_parent"
                             android:backgroundTint="@color/white"
                             android:inputType="textEmailAddress"
-                            android:textColor="@color/black"
                             android:maxLines="1"
+                            android:textColor="@color/black"
                             android:textColorHint="@color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
@@ -76,8 +76,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Password"
-                        app:boxStrokeColor="#EA2427"
                         android:textColorHint="#EA2427"
+                        app:boxStrokeColor="#EA2427"
                         app:errorEnabled="true">
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -86,8 +86,8 @@
                             android:layout_height="match_parent"
                             android:backgroundTint="@color/white"
                             android:inputType="textPassword"
-                            android:textColor="@color/black"
                             android:maxLines="1"
+                            android:textColor="@color/black"
                             android:textColorHint="@color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
@@ -98,29 +98,43 @@
                         android:layout_height="wrap_content"
                         android:hint="Remember"
                         android:textColor="@color/design_default_color_error"
-                        android:visibility="gone"
-                        />
+                        android:visibility="gone" />
 
                     <Button
-                        android:layout_marginTop="10dp"
                         android:id="@+id/logIn"
-                        android:onClick="login"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="LOG IN"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="#EA2427"
+                        android:onClick="login"
                         android:padding="10dp"
-                        android:backgroundTint="#EA2427"/>
+                        android:text="Sign In" />
+
+                    <com.google.android.gms.common.SignInButton
+                        android:id="@+id/googleButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
 
                     <TextView
-                        android:id="@+id/createAccount"
-                        android:onClick="createAccount"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:textSize="17sp"
-                        android:textColor="@color/black"
+                        android:onClick="loginFacebook"
                         android:padding="10dp"
-                        android:text="Create account"/>
+                        android:text="Facebook Create Acoount"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/createAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:onClick="createAccount"
+                        android:padding="10dp"
+                        android:text="Create account"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

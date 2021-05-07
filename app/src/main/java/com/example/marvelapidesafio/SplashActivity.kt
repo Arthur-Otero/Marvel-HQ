@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.util.Log
 import com.example.marvelapidesafio.comics.ComicActivity
 import com.example.marvelapidesafio.login.LoginActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -22,8 +23,11 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun checkLogin(){
+        Log.d("Teste","Teste")
         val user = firebaseAuth.currentUser
         if (user != null){
+            val userName =user.displayName!!
+            Log.d("Usuario",userName)
             val intent = Intent(this,ComicActivity::class.java)
             startActivity(intent)
         }else{

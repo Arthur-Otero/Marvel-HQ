@@ -18,7 +18,7 @@ class ImageActivity : AppCompatActivity() {
             onBackPressed()
         }
 
-        val comics = ComincsInfos.comicsInfo
+        val comics = ComicsInfo.comicsInfo
         Picasso.get().load(comics?.thumbnail?.path +"."+comics?.thumbnail?.extension).into(image)
     }
 }

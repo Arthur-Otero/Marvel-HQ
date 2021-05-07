@@ -10,12 +10,12 @@ import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.marvelapidesafio.R
 import com.example.marvelapidesafio.comics.details.ComicDetailsActivity
-import com.example.marvelapidesafio.comics.details.ComincsInfos
+import com.example.marvelapidesafio.comics.details.ComicsInfo
 import com.example.marvelapidesafio.model.comicsModel.ComicsList
 import com.squareup.picasso.Picasso
 import java.lang.StringBuilder
 
-class ComicAdapter() : RecyclerView.Adapter<ComicAdapter.ComicViewHolder>() {
+class ComicAdapter : RecyclerView.Adapter<ComicAdapter.ComicViewHolder>() {
     private var comics = mutableListOf<ComicsList>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ComicViewHolder {
@@ -33,11 +33,9 @@ class ComicAdapter() : RecyclerView.Adapter<ComicAdapter.ComicViewHolder>() {
             .into(holder.image)
         holder.card.setOnClickListener {
             val intent = Intent(it.context, ComicDetailsActivity::class.java)
-            ComincsInfos.comicsInfo = imagePath
+            ComicsInfo.comicsInfo = imagePath
             it.context.startActivity(intent)
         }
-
-//        holder.edition.text = "# ${position+1}"
 
         val sb = StringBuilder()
         if (imagePath.title?.contains('#') == true) {

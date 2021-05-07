@@ -2,6 +2,6 @@ package com.example.marvelapidesafio.comics.details
 
 import com.example.marvelapidesafio.model.comicsModel.ComicsList
 
-object ComincsInfos {
+object ComicsInfo {
     var comicsInfo : ComicsList? = null
 }

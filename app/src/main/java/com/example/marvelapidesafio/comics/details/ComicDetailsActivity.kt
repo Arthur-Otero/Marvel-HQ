@@ -1,17 +1,11 @@
 package com.example.marvelapidesafio.comics.details
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.cardview.widget.CardView
 import com.example.marvelapidesafio.R
-import com.example.marvelapidesafio.model.comicsModel.ComicsList
 import com.squareup.picasso.Picasso
 
 class ComicDetailsActivity : AppCompatActivity() {
@@ -28,7 +22,7 @@ class ComicDetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_comic_details)
 
-        val comics = ComincsInfos.comicsInfo
+        val comics = ComicsInfo.comicsInfo
 
         Picasso.get().load(comics?.thumbnail?.path +"."+comics?.thumbnail?.extension).into(banner)
         Picasso.get().load(comics?.thumbnail?.path +"."+comics?.thumbnail?.extension).into(backdrop)
